@@ -102,7 +102,6 @@ hi Todo         term=standout cterm=reverse,bold ctermfg=186 ctermbg=16 gui=reve
 hi Type         term=underline ctermfg=11 guifg=#80a0ff
 
 " Mode vertical split (window)
-"hi VertSplit    guifg=#e5e5e5 guibg=#e5e5e5 gui=NONE
 hi VertSplit    term=bold,reverse cterm=reverse ctermbg=59 guifg=#1d1f21 guibg=#75715e gui=reverse
 
 " mode Visual
@@ -118,7 +117,6 @@ hi WildMenu     ctermfg=234 ctermbg=61 guifg=#1d1f21 guibg=#5f5faf
 "menambah baris teks
 hi DiffAdd      ctermfg=231 ctermbg=16 cterm=NONE guifg=#ffffff guibg=#000000 
 "mengubah baris teks
-"hi DiffChange ctermfg=93 ctermbg=16 cterm=NONE guifg=#9900cc guibg=#000000
 hi DiffChange   term=bold cterm=bold  ctermbg=234 guibg=#1d1f21
 "mengubah teks dalam baris yang diubah
 hi DiffText     ctermfg=51 ctermbg=16 cterm=bold guibg=#272822
