@@ -25,10 +25,10 @@ hi Comment      term=italic cterm=italic ctermfg=59 guifg=#75715e gui=italic
 hi Constant     term=underline ctermfg=148 guifg=#a6e22d
 
 " kursor "kedap kedip"
-hi Cursor       cterm=reverse ctermfg=16 ctermbg=darkcyan guifg=#1d1f21 guibg=darkcyan gui=bold
+hi Cursor       cterm=reverse ctermfg=16 ctermbg=darkcyan guifg=#1d1f21 guibg=darkcyan
 
 " garis layar tempat kursor berada saat 'garis kursor' disetel
-hi CursorLine   term=underline ctermbg=59 guibg=#293739 gui=bold
+hi CursorLine   term=underline ctermbg=59 guibg=#293739
 
 " menyoroti kursor baris saat ini ':set number' relativenumber
 hi CursorLineNr term=bold ctermfg=186 guifg=#e6db74
@@ -93,7 +93,7 @@ hi StatusLine   term=bold,reverse cterm=reverse ctermbg=254 guifg=#1d1f21 guibg=
 " baris status jendela yang tidak aktif 
 " Catatan : jika ini sama dengan 'StatusLine' Vim akan menggunakan '^^^' 
 " di baris status jendela saat ini
-hi StatusLIneNc ctermfg=254 ctermbg=16 guifg=#1d1f21 guibg=#e5e5e5 gui=NONE
+hi StatusLIneNc ctermfg=16 ctermbg=254 guifg=#1d1f21 guibg=#e5e5e5
 
 " apapun yang membutuhkan perhatian ekstra; kebanyakan kata kunci TODO FIXME dan XXX
 hi Todo         term=standout cterm=reverse,bold ctermfg=186 ctermbg=16 gui=reverse,bold guifg=#e6db74 guibg=#1d1f21
