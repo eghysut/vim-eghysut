@@ -18,11 +18,16 @@ hi Normal       ctermfg=251 ctermbg=234 guifg=#c6c6c6 guibg=#1d1f21
 " true false
 hi Boolean      term=underline ctermfg=11 guifg=#80a0ff
 
+" ketik perintah ':set colorcolumn=30'
+hi ColorColumn term=underline ctermbg=59 guibg=#293739
 " komentar
 hi Comment      term=italic cterm=italic ctermfg=59 guifg=#75715e gui=italic
 
 " konstanta 
 hi Constant     term=underline ctermfg=148 guifg=#a6e22d
+
+" placeholder
+hi Conceal      term=underline ctermfg=59 ctermbg=234 guifg=#75715e guibg=#1d1f21
 
 " kursor "kedap kedip"
 hi Cursor       cterm=reverse ctermfg=16 ctermbg=darkcyan guifg=#1d1f21 guibg=darkcyan
@@ -39,8 +44,14 @@ hi Directory    term=bold ctermfg=81 guifg=#66d9ef
 " setiap konstruksi yang salah
 hi Error        term=reverse ctermfg=196 ctermbg=52 guifg=#e73c50 guibg=#5f0000
 
+" Pesan kesalahan pada baris perintah.
+hi ErrorMsg        term=reverse ctermfg=196 ctermbg=52 guifg=#e73c50 guibg=#5f0000
+
 " preprocessor #include  
-hi Include      term=underline cterm=underline ctermfg=81 guifg=#66d9ef gui=bold
+hi Include      term=underline cterm=underline ctermfg=81 guifg=#66d9ef
+
+" folded +---------- 2 line ---------------
+hi Folded term=standout ctermfg=59 ctermbg=233 guifg=#75715e guibg=#293739
 
 " method atau fungsi bawaan
 hi Function     term=underline cterm=bold ctermfg=11 guifg=#80a0ff gui=bold
@@ -77,6 +88,9 @@ hi PreProc      term=underline ctermfg=81 guifg=#66d9ef
 " preprocessor #if, #else, #endif, etc.
 hi PreCondit    term=underline ctermfg=81 guifg=#66d9ef
 
+"untuk menampilkan tanda atau penandaan pada kolom tertentu dalam jendela editor. 
+hi SignColumn   ctermbg=234 ctermfg=59 guifg=#75715e guibg=#1d1f21
+
 " karakter atau setiap simbol khusus \n(newline)
 hi Special      term=bold ctermfg=141 guifg=#ae81ff gui=bold
 
@@ -84,16 +98,20 @@ hi Special      term=bold ctermfg=141 guifg=#ae81ff gui=bold
 hi Statement    ctermfg=81 guifg=#66d9ef gui=NONE
 
 " karakter string: 'hello world'
+"#A6E22D
+"hi String       term=underline ctermfg=186 guifg=#e6db74
 hi String       term=underline ctermfg=148 guifg=#a6e22d
 
 " status baris jendela vim saat ini
 " ketik :split nama_file
-hi StatusLine   term=bold,reverse cterm=reverse ctermbg=254 guifg=#1d1f21 guibg=#e5e5e5 gui=bold
+hi StatusLine   term=bold,reverse cterm=reverse ctermbg=254 guifg=#e5e5e5 guibg=#1d1f21 gui=bold
 
 " baris status jendela yang tidak aktif 
 " Catatan : jika ini sama dengan 'StatusLine' Vim akan menggunakan '^^^' 
 " di baris status jendela saat ini
-hi StatusLIneNc ctermfg=16 ctermbg=254 guifg=#1d1f21 guibg=#e5e5e5
+hi StatusLIneNc ctermfg=16 ctermbg=254 guifg=#1d1f21 guibg=#e5e5e5 
+
+hi Title        ctermfg=252 guifg=#e8e8e3 gui=NONE
 
 " apapun yang membutuhkan perhatian ekstra; kebanyakan kata kunci TODO FIXME dan XXX
 hi Todo         term=standout cterm=reverse,bold ctermfg=186 ctermbg=16 gui=reverse,bold guifg=#e6db74 guibg=#1d1f21
@@ -102,10 +120,11 @@ hi Todo         term=standout cterm=reverse,bold ctermfg=186 ctermbg=16 gui=reve
 hi Type         term=underline ctermfg=11 guifg=#80a0ff
 
 " Mode vertical split (window)
+"hi VertSplit    guifg=#e5e5e5 guibg=#e5e5e5 gui=NONE
 hi VertSplit    term=bold,reverse cterm=reverse ctermbg=59 guifg=#1d1f21 guibg=#75715e gui=reverse
 
 " mode Visual
-hi Visual       term=reverse ctermfg=231 ctermbg=59 cterm=NONE guifg=NONE guibg=#293739 gui=bold
+hi Visual       term=reverse ctermfg=231 ctermbg=59 cterm=NONE guifg=NONE guibg=#293739
 
 "pesan peringatan
 hi WarningMsg        term=reverse ctermfg=196 ctermbg=52 guifg=#e73c50 guibg=#5f0000
@@ -117,6 +136,7 @@ hi WildMenu     ctermfg=234 ctermbg=61 guifg=#1d1f21 guibg=#5f5faf
 "menambah baris teks
 hi DiffAdd      ctermfg=231 ctermbg=16 cterm=NONE guifg=#ffffff guibg=#000000 
 "mengubah baris teks
+"hi DiffChange ctermfg=93 ctermbg=16 cterm=NONE guifg=#9900cc guibg=#000000
 hi DiffChange   term=bold cterm=bold  ctermbg=234 guibg=#1d1f21
 "mengubah teks dalam baris yang diubah
 hi DiffText     ctermfg=51 ctermbg=16 cterm=bold guibg=#272822
@@ -133,6 +153,17 @@ hi ReplaceColor term=bold cterm=bold ctermfg=234 ctermbg=cyan guifg=#1d1f21 guib
 " mode VISUAL
 hi VisualColor  term=bold cterm=bold ctermfg=234 ctermbg=cyan guifg=#1d1f21 guibg=cyan gui=bold
 
+" Html
+hi htmlTag      ctermfg=252 guifg=#e8e8e3
+hi htmlEndTag   ctermfg=252 guifg=#e8e8e3
+hi htmlArg      ctermfg=11  guifg=#80a0ff
+hi htmlSpecialChar ctermfg=141 guifg=#ae81ff
+
+" Xml
+hi xmlTag       ctermfg=252 guifg=#e8e8e3
+hi xmlEndTag    ctermfg=252 guifg=#e8e8e3
+
+
 if has("autocmd")
   " ::::::::::::::::::::: python :::::::::::::::::::::::::::
   au FileType python syntax keyword pythonKeyword print
@@ -147,15 +178,17 @@ if has("autocmd")
   au FileType java syntax keyword javaStatement   System out println
   au FileType java syntax keyword javaStatement   new instanceof
   au FileType java syntax keyword javaStatement   class static void
-  au FileType java syntax keyword javaStatement   yield
+  au FileType java syntax keyword javaStatement   yield 
   au FileType java syntax keyword javaBoolean     true false
   au FileType java syntax keyword javaBoolean     null
   au FileType java syntax keyword javaScopeDecl   public protected private abstract
-  au FileType java syntax match javaClassDecl "\(\w\+\s\?{\@=\)\+" 
+  "au FileType java syntax match javaClassDecl "\(\w\+\s\?{\@=\)\+"
+  au FileType java syntax match javaClassDecl "\(class\zs.*{\ze\)"
   au FileType java syntax match javaFuncDef "\(\.\@!\w\+(\@=\)\|\(\s\w\+(\@=\)\+"
 "  au FileType java syntax match javaStorageClass
   au FileType java set isk-=.
 endif
+
 
 hi! def link pythonKeyword Statement
 hi! def link pythonMacro   Statement
@@ -165,6 +198,5 @@ hi! def link javaFuncDef      Function
 hi! def link javaType         Statement
 hi! def link javaStatement    Statement
 hi! def link javaBoolean      Boolean
-hi! def link javaClassDecl    Statement
+hi! def link javaClassDecl    Function
 hi! def link javaScopeDecl    Statement
-hi! def link javaStorageClass Function
