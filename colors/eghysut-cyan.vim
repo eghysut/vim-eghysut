@@ -194,7 +194,6 @@ if has("autocmd")
   "au FileType java syntax match javaClassDecl "\(\w\+\s\?{\@=\)\+"
   au FileType java syntax match javaClassDecl "\(class\zs.*{\ze\)"
   au FileType java syntax match javaFuncDef "\(\.\@!\w\+(\@=\)\|\(\s\w\+(\@=\)\+"
-"  au FileType java syntax match javaStorageClass
   au FileType java set isk-=.
 endif
 
