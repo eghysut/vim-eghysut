@@ -159,10 +159,19 @@ hi htmlEndTag   ctermfg=252 guifg=#e8e8e3
 hi htmlArg      ctermfg=11  guifg=#80a0ff
 hi htmlSpecialChar ctermfg=141 guifg=#ae81ff
 
+" Css
+hi cssColor     ctermfg=141 guifg=#ae81ff
+hi cssPseudoClassId ctermfg=141 guifg=#ae81ff
+hi cssUIAttr    ctermfg=81 guifg=#66d9ef
+hi cssProp      ctermfg=81 guifg=#66d9ef
+hi cssBraces    ctermfg=252 guifg=#e8e8e3
+hi cssClassNameDot ctermfg=81 guifg=#66d9ef
+
 " Xml
 hi xmlTag       ctermfg=252 guifg=#e8e8e3
 hi xmlEndTag    ctermfg=252 guifg=#e8e8e3
-
+hi xmlTagName   ctermfg=81 guifg=#66d9ef
+hi xmlAttrib     ctermfg=11 guifg=#80a0ff
 
 if has("autocmd")
   " ::::::::::::::::::::: python :::::::::::::::::::::::::::
