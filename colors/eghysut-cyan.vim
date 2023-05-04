@@ -88,6 +88,12 @@ hi PreProc      term=underline ctermfg=81 guifg=#66d9ef
 " preprocessor #if, #else, #endif, etc.
 hi PreCondit    term=underline ctermfg=81 guifg=#66d9ef
 
+" QuickFix  ketik :vimgrep /nama_fungsi/ %
+hi QuickFixLine term=standout cterm=reverse,bold ctermfg=186 ctermbg=16 gui=reverse,bold guifg=#e6db74 guibg=#1d1f21
+
+" mencari sebuah pola
+hi Search     term=reverse cterm=reverse gui=reverse
+
 "untuk menampilkan tanda atau penandaan pada kolom tertentu dalam jendela editor. 
 hi SignColumn   ctermbg=234 ctermfg=59 guifg=#75715e guibg=#1d1f21
 
@@ -98,8 +104,6 @@ hi Special      term=bold ctermfg=141 guifg=#ae81ff gui=bold
 hi Statement    ctermfg=81 guifg=#66d9ef gui=NONE
 
 " karakter string: 'hello world'
-"#A6E22D
-"hi String       term=underline ctermfg=186 guifg=#e6db74
 hi String       term=underline ctermfg=148 guifg=#a6e22d
 
 " status baris jendela vim saat ini
@@ -111,6 +115,16 @@ hi StatusLine   term=bold,reverse cterm=reverse ctermbg=254 guifg=#e5e5e5 guibg=
 " di baris status jendela saat ini
 hi StatusLIneNc ctermfg=16 ctermbg=254 guifg=#1d1f21 guibg=#e5e5e5 
 
+" Baris halaman tab, bukan label halaman tab aktif.
+hi TabLine      ctermfg=59 ctermbg=234 guifg=#75715e guibg=#1d1f21 gui=NONE
+
+" Baris halaman tab, label halaman tab aktif.
+hi TabLineSel   ctermfg=254 ctermbg=234 guifg=#e5e5e5 guibg=#1d1f21 gui=NONE
+
+" Baris halaman tab, di mana tidak ada label.
+hi TabLineFill  ctermbg=234 guibg=#1d1f21 guifg=#e5e5e5 gui=NONE
+
+" judul
 hi Title        ctermfg=252 guifg=#e8e8e3 gui=NONE
 
 " apapun yang membutuhkan perhatian ekstra; kebanyakan kata kunci TODO FIXME dan XXX
