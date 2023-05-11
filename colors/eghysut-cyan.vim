@@ -16,7 +16,7 @@ let g:colors_name = "eghysut-cyan"
 hi Normal       ctermfg=251 ctermbg=234 guifg=#c6c6c6 guibg=#1d1f21
 
 " true false
-hi Boolean      term=underline ctermfg=27 guifg=#80a0ff
+hi Boolean      term=underline ctermfg=69 guifg=#80a0ff
 
 " ketik perintah ':set colorcolumn=30'
 hi ColorColumn term=underline ctermbg=59 guibg=#293739
@@ -54,7 +54,7 @@ hi Include      term=underline cterm=underline ctermfg=81 guifg=#66d9ef
 hi Folded term=standout ctermfg=59 ctermbg=233 guifg=#75715e guibg=#293739
 
 " method atau fungsi bawaan
-hi Function     term=underline cterm=bold ctermfg=27 guifg=#80a0ff gui=bold
+hi Function     term=underline cterm=bold ctermfg=69 guifg=#80a0ff gui=bold
 
 "Nomor baris untuk perintah ':number" dan ':#', dan kapan 'number'
 "atau opsi 'nomor relatif' disetel
@@ -131,7 +131,7 @@ hi Title        ctermfg=252 guifg=#e8e8e3 gui=NONE
 hi Todo         term=standout cterm=reverse,bold ctermfg=186 ctermbg=16 gui=reverse,bold guifg=#e6db74 guibg=#1d1f21
 
 " exception
-hi Type         term=underline ctermfg=27 guifg=#80a0ff
+hi Type         term=underline ctermfg=69 guifg=#80a0ff
 
 " Mode vertical split (window)
 "hi VertSplit    guifg=#e5e5e5 guibg=#e5e5e5 gui=NONE
@@ -170,7 +170,7 @@ hi VisualColor  term=bold cterm=bold ctermfg=234 ctermbg=cyan guifg=#1d1f21 guib
 " Html
 hi htmlTag      ctermfg=252 guifg=#e8e8e3
 hi htmlEndTag   ctermfg=252 guifg=#e8e8e3
-hi htmlArg      ctermfg=27  guifg=#80a0ff
+hi htmlArg      ctermfg=69  guifg=#80a0ff
 hi htmlSpecialChar ctermfg=141 guifg=#ae81ff
 
 " Css
@@ -185,7 +185,7 @@ hi cssClassNameDot ctermfg=81 guifg=#66d9ef
 hi xmlTag       ctermfg=252 guifg=#e8e8e3
 hi xmlEndTag    ctermfg=252 guifg=#e8e8e3
 hi xmlTagName   ctermfg=81 guifg=#66d9ef
-hi xmlAttrib     ctermfg=27 guifg=#80a0ff
+hi xmlAttrib     ctermfg=69 guifg=#80a0ff
 
 if has("autocmd")
   " ::::::::::::::::::::: python :::::::::::::::::::::::::::
