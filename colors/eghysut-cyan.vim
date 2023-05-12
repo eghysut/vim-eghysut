@@ -108,12 +108,12 @@ hi String       term=underline ctermfg=148 guifg=#a6e22d
 
 " status baris jendela vim saat ini
 " ketik :split nama_file
-hi StatusLine   term=bold,reverse ctermfg=251 ctermbg=234 guifg=#e5e5e5 guibg=#1d1f21 gui=bold
+hi StatusLine   term=NONE cterm=NONE ctermfg=251 ctermbg=234 guifg=#e5e5e5 guibg=#1d1f21 gui=NONE
 
 " baris status jendela yang tidak aktif 
 " Catatan : jika ini sama dengan 'StatusLine' Vim akan menggunakan '^^^' 
 " di baris status jendela saat ini
-hi StatusLIneNc ctermfg=16 ctermbg=234 guifg=#1d1f21 guibg=#e5e5e5 
+hi StatusLIneNc term=NONE cterm=NONE ctermfg=244 ctermbg=231 guifg=#75715e guibg=#1d1f21 gui=NONE
 
 " Baris halaman tab, bukan label halaman tab aktif.
 hi TabLine      ctermfg=59 ctermbg=234 guifg=#75715e guibg=#1d1f21 gui=NONE
